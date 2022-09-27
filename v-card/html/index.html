@@ -21,10 +21,10 @@
     </div>
     <nav class="nav" id="nav">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="#" onclick="contact()" id="bcontact" class="active">Contact</a></li>
+        <li><a href="#" onclick="aboutMe()" id="baboutme">About me</a></li>
+        <li><a href="#" onclick="portfolio()" id="bportfolio">Portfolio</a></li>
+        <li><a href="#" onclick="resume()" id="bresume">Resume</a></li>
       </ul>
     </nav> 
   </div>
@@ -36,12 +36,35 @@
             <h1>Nicolas Engels</h1>
             <h2>&#60; junior web developer &#62;</h2>
           </div>
-          <div class="verso">
+
+          <div class="verso contact">
+            <h3>Contact</h3>
             <p>nicolasengels17@gmail.com</p>
             <p>+32 494 18 60 74</p>
-            <p>BeCode</p>
+            <div id="social">
+              <a href="https://twitter.com/Nicolas_Engels" target="_blank"><img src="../img/Twitter social icons - circle - blue.svg" id="twitterlogo"></a>
+              <a href="https://www.instagram.com/nicolasticot_/" target="_blank"><img src="../img/instagram-colourful-icon.png" id="instalogo"></a>
+            </div>
+          </div>
+
+          <div class="verso aboutme">
+            <img src="../img/profil.jpg" id="pp">
+            <h3>About me</h3>
+            <p>742 Evergreen Terrace, Springfield</p>
+            <p>Student at BeCode</p>
+            <p>22 yeard old</p>
+          </div>
+
+          <div class="verso portfolio">
+            <h3>Portfolio</h3>
+            <p>Not designed yet</p>
+          </div>
+
+          <div class="verso resume">
+            <h3>Resume</h3>
+            <p>Not designed yet</p>
           </div>
         </div>
-      </div>
+    </div>
 </body>
 </html>
