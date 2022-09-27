@@ -26,6 +26,7 @@
 body{
     background-color: #181C25;
     color: #181C25;
+    overflow: hidden;
 }
 
 .carte {
@@ -57,11 +58,13 @@ h1{
     margin-top: 77px;
     font-size: 50px;
     font-family: 'Merriweather', serif;
+    color: #181C25;
 }
 
 h2{
     margin-top: -20px;
     font-family: 'Montserrat', sans-serif;
+    color: #181C25;
 }
   
 .carte:hover .flip-card-inner {
@@ -88,4 +91,104 @@ padding: 25px;
 align-items: space-between;
 font-family: 'Montserrat', sans-serif;
 font-size: 25px;
+}
+
+#menu {
+    z-index: 2;
+}
+  
+#menu-bar {
+    width: 45px;
+    height: 40px;
+    position: fixed;
+    top: 40px; 
+    right: 30px; 
+    cursor: pointer;
+}
+  
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: #f0e9dd;
+    display: block;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.nav {
+    transition: 0.5s ease;
+    display: none;
+    position: fixed;
+    top: 60px; 
+    right: 40px; 
+}
+
+.nav ul {
+    padding: 0 22px;
+}
+
+.nav li {
+    list-style: none;
+    padding: 12px 0;
+}
+
+.nav li a {
+    color: #181C25;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav li a:hover {
+    font-weight: bold;
+}
+
+.menu-bg, #menu {
+    top: 0;
+    right: -600px;
+    position: absolute;
+}
+
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #f0e9dd, #f0e9dd);
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+.change {
+    display: block;
+}
+
+.change .bar {
+    background-color: #181C25;
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%,-30%);
 }
