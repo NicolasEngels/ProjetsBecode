@@ -24,8 +24,7 @@
 }
 
 body{
-    background-color: #070707;
-    background-image: url(../img/topography.svg);
+    background-color: #181C25;
     color: #181C25;
     overflow: hidden;
 }
@@ -58,7 +57,7 @@ body{
 #index{
     float: left;
     font-family: 'Montserrat', sans-serif;
-    color: #070707;
+    color: #181C25;
     font-weight: bold;
     margin-left: 10px;
 }
@@ -67,13 +66,13 @@ h1{
     margin-top: 74px;
     font-size: 50px;
     font-family: 'Merriweather', serif;
-    color: #070707;
+    color: #181C25;
 }
 
 h2{
     margin-top: -20px;
     font-family: 'Montserrat', sans-serif;
-    color: #070707;
+    color: #181C25;
 }
 
 p{
@@ -102,7 +101,7 @@ transform: rotateY(180deg);
 }
   
 .recto {
-    color: #070707;
+    color: black;
 }
 
 .verso {
@@ -118,7 +117,7 @@ transform: rotateY(180deg);
 }
 
 .contact a{
-    color: #070707;
+    color: #181C25;
 }
 
 #pp{
@@ -202,7 +201,7 @@ a img{
 }
 
 .nav li a {
-    color: #070707;
+    color: #181C25;
     font-size: 20px;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
@@ -233,7 +232,7 @@ a img{
 }
 
 .change .bar {
-    background-color: #070707;
+    background-color: #181C25;
 }
 
 .change #bar1 {
