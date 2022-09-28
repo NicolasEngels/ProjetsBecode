@@ -41,8 +41,8 @@ body{
     transform: translateY(-50%);
     left: 50%;
     background-image: 50%;
-    -webkit-animation: tilt-in-fwd-tr 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-	        animation: tilt-in-fwd-tr 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+    -webkit-animation: tilt-in-fwd-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	        animation: tilt-in-fwd-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
 }
 
 .flip-card-inner {
@@ -54,8 +54,16 @@ body{
     transform-style: preserve-3d;
 }
 
+#index{
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    color: #181C25;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
 h1{
-    margin-top: 77px;
+    margin-top: 74px;
     font-size: 50px;
     font-family: 'Merriweather', serif;
     color: #181C25;
@@ -135,7 +143,6 @@ a img{
 
 .aboutme{
     display: none;
-    margin-top: 50px;
 }
 
 .portfolio{

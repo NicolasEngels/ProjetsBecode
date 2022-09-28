@@ -24,6 +24,8 @@ function contact(){
 
     document.getElementsByClassName("contact")[0].style.display = "block";
     document.getElementById("bcontact").classList.add("active");
+
+    document.getElementById("index").textContent = "C";
 }
 
 function aboutMe(){
@@ -38,6 +40,8 @@ function aboutMe(){
 
     document.getElementsByClassName("contact")[0].style.display = "none";
     document.getElementById("bcontact").classList.remove("active");
+
+    document.getElementById("index").textContent = "A";
 }
 
 function portfolio(){
@@ -52,6 +56,8 @@ function portfolio(){
 
     document.getElementsByClassName("contact")[0].style.display = "none";
     document.getElementById("bcontact").classList.remove("active");
+
+    document.getElementById("index").textContent = "P";
 }
 
 function resume(){
@@ -66,4 +72,6 @@ function resume(){
 
     document.getElementsByClassName("contact")[0].style.display = "none";
     document.getElementById("bcontact").classList.remove("active");
+
+    document.getElementById("index").textContent = "R";
 }
