@@ -154,6 +154,7 @@ transform: rotateY(180deg);
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    background-color: #f0e9dd;
     background-image: url('../img/paper_bg.jpg');
 }
   
