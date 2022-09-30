@@ -3,3 +3,124 @@
     blue : #4C00F7
     blanc : #FFFFFF
     text : #3A3A3A
+**/
+
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 34% 33% 33%;
+    column-gap: 0;
+    min-height: 761px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #4C00F7;
+    color: #FFFFFF;
+    padding:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#logo{
+    width: 250px;
+    margin-left: -37px; margin-top: -37px;
+}
+
+h3{
+    padding: 0;
+    margin-bottom: 3px;
+}
+
+#info p{
+    padding: 0;
+    margin-top: 0;
+}
+
+#social{
+    width: 300px;
+    margin-bottom: -37px; margin-left: -13px; margin-top: -20px;
+}
+
+#center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#pp{
+    width: 430px;
+    margin-left: -100px;
+    filter: drop-shadow(0px 0px 15px #5F5F5F);
+}
+
+#menu-bar {
+    width: 35px;
+    height: 40px;
+    position: fixed;
+    top: 40px; 
+    right: 30px; 
+    cursor: pointer;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: #3A3A3A;
+    display: block;
+    border-radius: 5px;
+    margin-top: 4px;
+}
+
+#text{
+    margin-top: 235px;
+    margin-left: -70px;
+}
+
+h1{
+    font-size: xx-large;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#surname{
+    color: #4C00F7;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+#text p{
+    margin-top: 25px;
+    line-height: 23px;
+}
+
+button{
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: large;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#portfolio{
+    background-color: #4C00F7;
+    color: #FFFFFF;
+    border: solid #4C00F7 2px;
+    margin-right: 30px;
+}
+
+#resume{
+    background-color: #FFFFFF;
+    color: #3A3A3A;
+    border: solid #3A3A3A 2px;
+}

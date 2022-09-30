@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap" rel="stylesheet">
+
     <title>v-card</title>
 </head>
 <body>
     <header>
-        <img src="./img/output-onlinejpgtools.png">
+        <img src="./img/output-onlinejpgtools.png" id="logo">
         <div id="info">
             <h3>Email</h3>
             <p>quicksayed@gmail.com</p>
             <h3>Phone</h3>
             <p>+880 174 037 6995</p>
             <h3>Find Me On</h3>
-            <img src="./img/social.png">
+            <img src="./img/social.png" id="social">
         </div>
     </header>
 
-    <img src="./img/profile-picture.png" id="pp">
+    <div id="center">
+        <img src="./img/profile-picture.png" id="pp">
+    </div>
 
     <nav>
         <div id="menu-bar">
@@ -29,11 +35,11 @@
         </div>
 
         <div id="text">
-            <h1>Santush<br>Deb</h1>
+            <h1>Santush<br><span id="surname">deb</span></h1>
             <h2>Creative Director - Saint Studios</h2>
             <p>I'm Santush Deb Nath, a huge HTML lover.
-               A 25-year-old living in a small, but damn 
-               beautiful country called Bangladesh
+               A<br>25-year-old living in a small, but damn 
+               beautiful<br>country called Bangladesh
             </p>
             <button id="portfolio">portfolio</button>
             <button id="resume">resume</button>
