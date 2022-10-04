@@ -282,7 +282,3 @@ function convertName(n){
 function removeSpace(n){
     return n.replace(/\s/g, '');
 }
-
-//launch
-
-console.log(removeSpace("a sentence with spaces"));
