@@ -1,28 +1,28 @@
 //Variable
 
-function sum(a, b){
+const sum = (a, b) => {
     return a + b;
 }
 
-function division(a, b){
+const division = (a, b) => {
     return a / b;
 }
 
-function modulo(){
+const modulo = () => {
     var numerateur = prompt("Saisissez le numérateur :", 0);
     var denominateur = prompt("Saisissez le dénominateur :", 1);
     return numerateur % denominateur;
 }
 
-function VAT(a){
+const VAT = (a) => {
     return a * 1.21;
 }
 
-function surfaceCercle (radius){
+const surfaceCercle = (radius) => {
     return Math.PI * (radius * radius);
 }
 
-function whatSecondIsIt(){
+const whatSecondIsIt = () => {
     var hour = new Date().getHours() * 3600;
     var minute = new Date().getMinutes() * 60;
     var second = new Date().getSeconds();
@@ -31,7 +31,7 @@ function whatSecondIsIt(){
 
 //Conditions
 
-function cinema(){
+const cinema = () => {
     var age = prompt("quel est votre age ?", "vous n'avez rien rentré");
     if(age <= 25){
         return "tarif jeune : 8€";
@@ -40,7 +40,7 @@ function cinema(){
     }
 }
 
-function maximum (a, b, c){
+const maximum = (a, b, c) => {
     if( a >= b && a >= c ){
         return a;
     }else if( b >= a && b >= c ){
@@ -50,7 +50,7 @@ function maximum (a, b, c){
     }
 }
 
-function identicalDice(){
+const identicalDice = () => {
     var d1 = Math.floor(Math.random() * 6) + 1;
     console.log("dé 1 : " + d1);
     var d2 = Math.floor(Math.random() * 6) + 1;
@@ -67,7 +67,7 @@ function identicalDice(){
     }
 }
 
-function dayNumber(n){
+const dayNumber = (n) => {
     switch(n){
         case 1 :
             return "Monday";
@@ -93,7 +93,7 @@ function dayNumber(n){
     }
 }
 
-function printShop(n){
+const printShop = (n) => {
     if (n <= 10){
         return "total à payer : " + n * 0.12 + "€";
     }else if (n <= 30){
@@ -109,31 +109,31 @@ function printShop(n){
 
 //loops
 
-function oneToN (n){
+const oneToN = (n) => {
     for (var i = 1; i<=n; i++){
         console.log(i);
     }
 }
 
-function nToOne (n){
+const nToOne = (n) => {
     for (n; n>=1; n--){
         console.log(n);
     }
 }
 
-function minusNToN (n){
+const minusNToN = (n) => {
     for (var minus = -n ; minus <= n; minus++){
         console.log(minus);
     }
 }
 
-function oddNumberToN (n){
+const oddNumberToN = (n) => {
     for (var i = 1; i <= n; i = i+2){
         console.log(i);
     }
 }
 
-function fromZeroToRandom(){
+const fromZeroToRando = () => {
     var n = prompt("donnez un chiffre : ", 10);
     if (n>=0){
         for (var i = 1; i<=n; i++){
@@ -147,7 +147,7 @@ function fromZeroToRandom(){
     
 }
 
-function throwDices (n){
+const throwDices = (n) => {
     var one = 0;
     var two = 0;
     var three = 0;
@@ -192,7 +192,7 @@ function throwDices (n){
     console.log("nombre de 6 : " + six);
 }
 
-function perfectNumber(n){
+const perfectNumber = (n) => {
     var sum = 0;
     for (var i = 1 ; i < n ; i++){
         if (n % i === 0){
@@ -208,13 +208,13 @@ function perfectNumber(n){
 
 //arrays
 
-function everything(n){
+const everything = (n) => {
     for (m in n){
         console.log(n[m]);
     }
 }
 
-function maxInArray(n){
+const maxInArray = (n) => {
     var max = n[0];
     for (m in n){
         if (n[m] >= max){
@@ -224,7 +224,7 @@ function maxInArray(n){
     return max;
 }
 
-function minInArray(n){
+const minInArray = (n) => {
     var min = n[0];
     for (m in n){
         if (n[m] <= min){
@@ -234,7 +234,7 @@ function minInArray(n){
     return min;
 }
 
-function minPosInArray(n){
+const minPosInArray = (n) => {
     var min = n[0];
     for (m in n){
         if (n[m] <= min){
@@ -244,7 +244,7 @@ function minPosInArray(n){
     return n.indexOf(min);
 }
 
-function ordered(n){
+const ordered = (n) => {
     for (var i = 0; i < n.length; i++){
         if (n[i] > n[i+1]){
             return "array désordonné";
@@ -255,15 +255,15 @@ function ordered(n){
 
 //strings
 
-function lowerCase (n){
+const lowerCase = (n) => {
     return n.toLowerCase();
 }
 
-function upperCase (n){
+const upperCase = (n) => {
     return n.toUpperCase();
 }
 
-function convertName(n){
+const convertName = (n) => {
     var final = "";
     var prenom = n.indexOf(",") + 2;
     for (prenom ; prenom <= n.length; prenom++){
@@ -279,6 +279,6 @@ function convertName(n){
     return final
 }
 
-function removeSpace(n){
+const removeSpace = (n) => {
     return n.replace(/\s/g, '');
 }
