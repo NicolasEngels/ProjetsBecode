@@ -403,7 +403,6 @@ button{
     border: none;
     position: absolute;
     right: 60px;
-    top: 33px
 }
 
 
@@ -471,7 +470,7 @@ h2.bandeau {
 #atout{
     padding-top: 85px;
     padding-bottom: 85px;
-    width: 90%;
+    width: 85%;
     margin: auto;
     display: grid;
     grid-template-rows: 50% 50%;
@@ -556,4 +555,51 @@ footer button:hover{
 #end p{
     margin-left: 25px;
     margin-right: 25px;
+}
+
+@media only screen and (max-width: 1007px){
+
+        header{
+                display: flex;
+                justify-content: space-around;
+        }
+
+        h3{
+                display: none;
+        }
+
+        #login{
+                position:static;
+        }
+
+        a{
+                font-size:2px;
+        }
+}
+
+@media only screen and (max-width: 772px){
+        #atout{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+        }
+
+        #simple, #productive, #modern{
+                margin-bottom: 30px;
+        }
+}
+
+@media only screen and (max-width: 640px){
+
+        main{
+                padding-top: 50px;
+        }
+
+        header{
+                display: none;
+        }
+
+        footer .bandeau{
+                height: auto;
+        }
 }
