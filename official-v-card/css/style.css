@@ -13,15 +13,15 @@ body{
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 34% 33% 33%;
+    grid-template-columns: 34% 20% 46%;
     column-gap: 0;
     font-family: 'Montserrat', sans-serif;
     min-height: 100%;
-    border: solid black 1px
 }
 
 header{
     background-color: #4C00F7;
+    min-width: 230px;
     color: #FFFFFF;
     padding:50px;
     display: flex;
@@ -32,11 +32,22 @@ header{
 #logo{
     width: 250px;
     margin-left: -37px; margin-top: -37px;
+    z-index: 1;
+    background-color: rgba(76, 0, 247, 1);
+    border-radius: 5px;
 }
 
 h3{
     padding: 0;
     margin-bottom: 3px;
+}
+
+#info{
+    height: 220px;
+    width: 280px;
+    z-index: 1;
+    background-color: rgba(76, 0, 247, 1);
+    border-radius: 5px;
 }
 
 #info p{
@@ -58,7 +69,7 @@ h3{
 #pp{
     width: 430px;
     margin-left: -100px;
-    filter: drop-shadow(0px 0px 15px #5F5F5F);
+    filter: drop-shadow(0px 0px 10px #5F5F5F);
 }
 
 #menu-bar {
@@ -79,9 +90,18 @@ h3{
     margin-top: 4px;
 }
 
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+}
+
 #text{
-    margin-top: 235px;
-    margin-left: -70px;
+    padding: 35px;
+    margin: auto;
+    background-color: rgba(256, 256, 256, 0.8);
+    border-radius: 5px;
 }
 
 h1{
