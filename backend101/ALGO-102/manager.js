@@ -1,7 +1,7 @@
 var readline = require('readline');
 var rl = readline.createInterface(process.stdin, process.stdout);
 
-var tasks = "./";
+var tasks = [];
 
 
 
@@ -35,7 +35,7 @@ const seeTask = () => {
     console.log("");
     if (tasks.length > 0){
         for (task in tasks){
-            console.log(" "+ (task) +". " +tasks[task]);
+            console.log(" "+ (Number(task)+1) +". " +tasks[task]);
         }
     }else{
         console.log(" Task list empty");
