@@ -15,4 +15,4 @@ section[2].children[0].children[0].textContent = section[1].children[0].textCont
 
 section[1].children[0].textContent = titleSecondSection;
 
-section[2].style.display = "none";
+section[2].remove();
