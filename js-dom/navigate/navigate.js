@@ -3,7 +3,7 @@ const ol = document.querySelector('ol');
 const olSize = ol.children.length;
 
 for (var i = 0 ; i < olSize-1 ; i++){
-    ol.append(ol.children[0]);
+    ol.appendChild(ol.children[0]);
 }
 
 
