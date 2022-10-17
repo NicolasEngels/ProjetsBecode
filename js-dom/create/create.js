@@ -19,7 +19,7 @@ const checkColor = (r, g, b) => {
 const students = ['coach diogo', 'coach Thomas', 'andrii', 'anna', 'arsenia', 'audric', 'aurore', 'ben', 'daria', 'edouard', 'egide'];
 
 let shuffledstudents = students.sort(function () {
-    return Math.random() - 0.5;
+    return Math.random()- 0.5;
 });
 
 for (const student of shuffledstudents){
