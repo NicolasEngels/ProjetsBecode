@@ -34,10 +34,6 @@ for (let actionSquare of actionSquares) {
   actionSquare.addEventListener('click', clickOnSquare);
 }
 
-// const displaiedSquares = document.querySelectorAll('.displayedsquare');
-// for (let displaiedSquare of displaiedSquares) {
-//   displaiedSquare.addEventListener('click', clickOnDisplay);
-// }
 
 document.body.onkeyup = function(e) {
   if (e.key == " " || e.code == "Space" || e.keyCode == 32) {
