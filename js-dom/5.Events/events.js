@@ -8,6 +8,8 @@ const getElapsedTime = () => {
   return Number((Date.now() - _initTime) / 1000).toFixed(2) + 's'
 }
 
+var displayList = [];
+
 const clickOnSquare = (e) => {
   const newSquare = document.createElement("div");
   newSquare.classList.add("displayedsquare");
@@ -33,7 +35,6 @@ const actionSquares = document.querySelectorAll('.actionsquare');
 for (let actionSquare of actionSquares) {
   actionSquare.addEventListener('click', clickOnSquare);
 }
-
 
 document.body.onkeyup = function(e) {
   if (e.key == " " || e.code == "Space" || e.keyCode == 32) {

@@ -62,14 +62,75 @@ document.body.onkeydown = function(e) {
             }
         }
 
-        for (const film of shuffledlist){
+        for (film in shuffledlist){
             const newFilm = document.createElement("li"); 
 
-            newFilm.appendChild(document.createTextNode(film[1]));
+            newFilm.appendChild(document.createTextNode(shuffledlist[film][1]));
+
+            console.log(film);
+
+            if (film==0){
+                newFilm.classList.add('important');
+            }
 
             const place = document.querySelector("ul");
             place.appendChild(newFilm);
         }
-    }
-  }
 
+    } else if (e.key == "d" || e.code == "KeyD" || e.keyCode == 68){
+        const newFF =  document.createElement("li"); 
+
+        newFF.appendChild(document.createTextNode("Fast and Furious"));
+
+        const place = document.querySelector("ul");
+        place.appendChild(newFF);
+    }
+}
+
+
+const newDiv = document.createElement("div");
+document.body.insertBefore(newDiv, document.querySelector("ul"));
+
+const filter = document.createElement("select");
+newDiv.appendChild(filter);
+
+var all = document.createElement("option");
+all.appendChild(document.createTextNode("all"));
+all.value = "all";
+filter.appendChild(all);
+
+var important = document.createElement("option");
+important.appendChild(document.createTextNode("important"));
+important.value = "important";
+filter.appendChild(important);
+
+var casual = document.createElement("option");
+casual.appendChild(document.createTextNode("casual"));
+casual.value = "casual";
+filter.appendChild(casual);
+
+
+
+let mode = document.querySelector('select');
+
+mode.addEventListener('change', (e) => {
+    var mode = e.target.value;
+
+    for(const film of list){
+        console.log(list);
+        if (mode == "important" && film.nodeType === 1){
+            film.style.display = "block";
+            if(!film.classList.contains('important')){
+                film.style.display = "none";
+            }
+        }else if (mode == "casual" && film.nodeType === 1){
+            film.style.display = "block";
+            if(film.classList.contains('important')){
+                film.style.display = "none";
+
+            }
+        }else if (mode == "all" && film.nodeType === 1){
+            film.style.display = "block";
+        }
+    }
+})

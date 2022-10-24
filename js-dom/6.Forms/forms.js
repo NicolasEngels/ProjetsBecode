@@ -41,7 +41,6 @@ passwordConfirm.addEventListener('keyup', (e) => {
 });
 
 
-
 let mode = document.getElementById('toggle-darkmode');
 
 mode.addEventListener('change', (e) => {
