@@ -1,38 +1,38 @@
 //  --  EX1  -- //
 
-// let interval;
-// let index = 0;
-// let word = "Prout";
+let interval;
+let index = 0;
+let word = "Prout";
 
-// const displayWord = () => {
-//     if(index == word.length){
-//         clearInterval(interval);
-//     }else{
-//         document.write(word.charAt(index));
-//         index++;
-//     }
-// }
+const displayWord = () => {
+    if(index == word.length){
+        clearInterval(interval);
+    }else{
+        document.write(word.charAt(index));
+        index++;
+    }
+}
 
-// interval = setInterval(displayWord, 400);
+interval = setInterval(displayWord, 400);
 
 
 //  --  EX2  -- //
 
-// let time = 1;
+let time = 1;
 
-// const displayTime = () => {
-//     if (time===1){
-//         document.write(time + " seconde depuis le lancement de la page"); 
-//     }else if (time < 60){
-//         document.write(time + " secondes depuis le lancement de la page"); 
-//     }else{
-//         document.write(Math.floor(time/60) + " minutes et " + time%60 + " depuis le debut du lancement de la page"); 
-//     }
-//     document.write("<br/>");
-//     time++;
-// }
+const displayTime = () => {
+    if (time===1){
+        document.write(time + " seconde depuis le lancement de la page"); 
+    }else if (time < 60){
+        document.write(time + " secondes depuis le lancement de la page"); 
+    }else{
+        document.write(Math.floor(time/60) + " minutes et " + time%60 + " depuis le debut du lancement de la page"); 
+    }
+    document.write("<br/>");
+    time++;
+}
 
-// setInterval(displayTime, 1000);
+setInterval(displayTime, 1000);
 
 
 //  --  EX3  -- //
@@ -67,6 +67,7 @@ const compteur = document.createElement("p");
 compteur.style.textAlign = "center";
 compteur.innerHTML = "points : " + points++;
 document.body.appendChild(compteur);
+
 
 circleList[0].style.backgroundColor = "red";
 
