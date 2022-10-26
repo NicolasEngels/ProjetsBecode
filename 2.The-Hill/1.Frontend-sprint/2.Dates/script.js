@@ -1,3 +1,5 @@
+let now = new Date();
+
 //  --  EX1  --  //
 
 
@@ -12,7 +14,7 @@ document.write("Saint-Petersburg : " + date.toLocaleString('en-US',{timeZone: 'E
 //  --  EX2  --  //
 
 
-let now = new Date();
+
 let myBirthDay = new Date('2000-07-31');
 
 console.log(Math.floor((now.getTime() - myBirthDay.getTime()) / (1000 * 60 * 60 * 24)) + " jours complets depuis la naissance de Nicolas Engels");
@@ -50,6 +52,7 @@ rl.question('-- HOW MANY DAYS --\nenter a  year\n' , (year) => {
 //  --  EX3  --  //
 
 
+
 let aLotOfHours = 1000 * 60 * 60 * 80000;
 let turfu = new Date (now.getTime() + aLotOfHours);
 console.log(turfu.toString())
@@ -58,14 +61,16 @@ console.log(turfu.toString())
 
 let numberHour = document.getElementById('numberHour');
 numberHour.addEventListener('keyup', (e) => {
-    const hours = 1000 * 60 * 60 * numberHour.value;
+    if (e.key>=0 && e.key <=9){
+        const hours = 1000 * 60 * 60 * numberHour.value;
 
-    let nextDate = new Date (now.getTime() + hours);
+        let nextDate = new Date (now.getTime() + hours);
 
-    const display = document.createElement("p");
-    display.style.textAlign = "center";
-    display.innerHTML = nextDate.toString();
-    document.body.appendChild(display);
+        const display = document.createElement("p");
+        display.style.textAlign = "center";
+        display.innerHTML = nextDate.toString();
+        document.body.appendChild(display);
+    }
 })
 
 
