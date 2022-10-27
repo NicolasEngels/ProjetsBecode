@@ -1,43 +1,3 @@
-//  --  EX1  -- //
-
-let interval;
-let index = 0;
-let word = "Prout";
-
-const displayWord = () => {
-    if(index == word.length){
-        clearInterval(interval);
-    }else{
-        document.write(word.charAt(index));
-        index++;
-    }
-}
-
-interval = setInterval(displayWord, 400);
-
-
-//  --  EX2  -- //
-
-let time = 1;
-
-const displayTime = () => {
-    if (time===1){
-        document.write(time + " seconde depuis le lancement de la page"); 
-    }else if (time < 60){
-        document.write(time + " secondes depuis le lancement de la page"); 
-    }else{
-        document.write(Math.floor(time/60) + " minutes et " + time%60 + " depuis le debut du lancement de la page"); 
-    }
-    document.write("<br/>");
-    time++;
-}
-
-setInterval(displayTime, 1000);
-
-
-//  --  EX3  -- //
-
-
 const plateau = document.createElement("div");
 plateau.style.border='solid 2px black';
 plateau.style.width='600px';
@@ -80,6 +40,3 @@ circleList.forEach((circle) => {
         }
     })
 })
-
-
-
